@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tim Harmar Legal & Consulting Services | Civil Litigation, Privacy & Economic Development | Sault Ste. Marie</title>
     
@@ -25,6 +25,9 @@
     <meta name="twitter:title" content="Tim Harmar Legal & Consulting Services" />
     <meta name="twitter:description" content="Expert legal solutions in civil litigation, privacy law, intellectual property, and economic development consulting." />
     <meta name="twitter:image" content="https://www.timharmar.com/twitter-image.jpg" />
+    
+    <!-- AOS Animation Library CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     
     <!-- Local Business Schema -->
     <script type="application/ld+json">
@@ -73,11 +76,16 @@
     </script>
     
     <!-- Preload critical resources -->
-    <link rel="preload" href="/src/assets/tim_harmar_logo_updated.png" as="image" />
-    <link rel="preload" href="/src/assets/hero_background.png" as="image" />
+    <link rel="preload" href="./src/assets/tim_harmar_logo_updated.png" as="image" />
+    <link rel="preload" href="./src/assets/hero_background.png" as="image" />
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="./src/main.jsx"></script>
+    <!-- AOS Animation Library JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
