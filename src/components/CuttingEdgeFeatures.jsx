@@ -1,18 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   MessageCircle, 
   Calendar, 
   FileText, 
-  Search, 
   Bell, 
-  Shield,
-  Zap,
   Brain,
-  Globe,
-  Clock,
-  Users,
-  TrendingUp
+  Clock
 } from 'lucide-react';
 
 // AI-Powered Legal Assistant Chat Widget

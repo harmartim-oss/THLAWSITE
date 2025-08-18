@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Shield,
   Gavel,
   Lightbulb,
-  Building,
   Mail,
   Phone,
   Menu,
@@ -18,8 +17,7 @@ import {
   Zap,
   Brain,
   Calendar,
-  FileText,
-  Bell
+  FileText
 } from 'lucide-react';
 import './App.css';
 
@@ -33,8 +31,8 @@ import {
 } from './components/CuttingEdgeFeatures';
 
 // Import assets
-import logoImage from './assets/tim_harmar_logo_updated.png';
-import heroBackground from './assets/hero_background.png';
+import logoImage from './assets/tim_harmar_logo_updated.svg';
+import heroBackground from './assets/hero_background.svg';
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -114,10 +112,10 @@ const App = () => {
   ];
 
   const publications = [
-    { title: "A Judicial 'SLAPP' To The Drafters Of Ontario's Anti-SLAPP Legislation: A Case Comment On 1704604 Ontario Ltd. v. Pointes Protection Assn.", url: "https://www.mondaq.com/canada/privacy-data-protection/514964/a-judicial-slapp-to-the-drafters-of-ontario39s-anti-slapp-legislation-a-case-comment-on-1704604-ontario-ltd-v-pointes-protection-assn" },
+    { title: "A Judicial &apos;SLAPP&apos; To The Drafters Of Ontario&apos;s Anti-SLAPP Legislation: A Case Comment On 1704604 Ontario Ltd. v. Pointes Protection Assn.", url: "https://www.mondaq.com/canada/privacy-data-protection/514964/a-judicial-slapp-to-the-drafters-of-ontario39s-anti-slapp-legislation-a-case-comment-on-1704604-ontario-ltd-v-pointes-protection-assn" },
     { title: "Monetary Claims Based On Constructive Trust Cannot Be Registered on Title", url: "https://www.mondaq.com/canada/real-estate/613480/monetary-claims-based-on-constructive-trust-cannot-be-registered-on-title" },
-    { title: "Snitches Don't Get Stitches: IPC Upholds Municipal Decision To Withhold Complainant Information Under MFIPPA", url: "https://www.mondaq.com/canada/privacy-data-protection/601678/snitches-don39t-get-stitches-ipc-upholds-municipal-decision-to-withhold-complainant-information-under-mfippa" },
-    { title: "Federal Government Suspends CASL's Private Right of Action", url: "https://www.mondaq.com/canada/telecoms-media-it/600170/federal-government-suspends-casl39s-private-right-of-action" },
+    { title: "Snitches Don&apos;t Get Stitches: IPC Upholds Municipal Decision To Withhold Complainant Information Under MFIPPA", url: "https://www.mondaq.com/canada/privacy-data-protection/601678/snitches-don39t-get-stitches-ipc-upholds-municipal-decision-to-withhold-complainant-information-under-mfippa" },
+    { title: "Federal Government Suspends CASL&apos;s Private Right of Action", url: "https://www.mondaq.com/canada/telecoms-media-it/600170/federal-government-suspends-casl39s-private-right-of-action" },
     { title: "No Collective Agreement, No Grievance: Arbitrators Lack Jurisdiction To Hear Grievances Arising Before a Collective Agreement Is In Effect", url: "https://www.mondaq.com/canada/arbitration--dispute-resolution/595568/no-collective-agreement-no-grievance-arbitrators-lack-jurisdiction-to-hear-grievances-arising-before-a-collective-agreement-is-in-effect" },
     { title: "Islamic Securitization: Structuring for Shari’ah Compliance", url: "#" }, // URL not found in search
     { title: "MOECC Proposing Amendments To Cap and Trade Program Regulation And Quantification, Reporting And Verification Of Greenhouse Gas Emissions Regulation", url: "#" }, // URL not found in search
@@ -392,7 +390,7 @@ const App = () => {
                 <h3 className="text-xl font-bold">Smart Scheduling</h3>
               </div>
               <p className="text-blue-100 mb-4">
-                Intelligent appointment booking that adapts to your needs and Tim's availability.
+                Intelligent appointment booking that adapts to your needs and Tim&apos;s availability.
               </p>
               <div className="flex items-center text-teal-300">
                 <Zap className="w-4 h-4 mr-2" />
