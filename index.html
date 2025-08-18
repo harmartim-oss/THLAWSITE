@@ -75,9 +75,23 @@
     <!-- Preload critical resources -->
     <link rel="preload" href="/src/assets/tim_harmar_logo_updated.png" as="image" />
     <link rel="preload" href="/src/assets/hero_background.png" as="image" />
+    
+    <!-- Additional CSS and fonts for static content -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css" />
+    
+    <!-- AOS (Animate On Scroll) Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- AOS (Animate On Scroll) Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom script for contact form and AOS initialization -->
+    <script src="/script.js"></script>
   </body>
 </html>

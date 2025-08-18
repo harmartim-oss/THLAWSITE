@@ -543,7 +543,7 @@ const App = () => {
               className="bg-white/10 p-8 rounded-lg backdrop-blur-sm"
             >
               <h3 className="text-2xl font-bold mb-6">Schedule a Consultation</h3>
-              <form id="contact-form" className="space-y-4">
+              <form className="space-y-4">
                 <div>
                   <label className="block text-sm font-medium mb-2">Name</label>
                   <input
