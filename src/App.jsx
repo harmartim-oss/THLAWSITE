@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Shield,
   Gavel,
   Lightbulb,
-  Building,
   Mail,
   Phone,
   Menu,
@@ -18,8 +17,7 @@ import {
   Zap,
   Brain,
   Calendar,
-  FileText,
-  Bell
+  FileText
 } from 'lucide-react';
 import './App.css';
 
@@ -33,8 +31,13 @@ import {
 } from './components/CuttingEdgeFeatures';
 
 // Import assets
-import logoImage from './assets/tim_harmar_logo_updated.png';
-import heroBackground from './assets/hero_background.png';
+// TODO: Add actual logo and hero background images
+// import logoImage from './assets/tim_harmar_logo_updated.png';
+// import heroBackground from './assets/hero_background.png';
+
+// Temporary placeholders
+const logoImage = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Crect width='200' height='60' fill='%234A90E2'/%3E%3Ctext x='100' y='35' text-anchor='middle' fill='white' font-family='Arial' font-size='14'%3ETim Harmar Legal%3C/text%3E%3C/svg%3E";
+const heroBackground = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 600'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%231e3a8a'/%3E%3Cstop offset='100%25' style='stop-color:%232563eb'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='1200' height='600' fill='url(%23grad)'/%3E%3C/svg%3E";
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
